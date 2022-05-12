@@ -166,7 +166,7 @@ async def pins(event):
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await reply_message.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'✅**Modul uğurla yükləndi!**\n__Modulun komandaları və işlədilişi haqqında məlumat üçün__ `.bozqurd {cmdhelp}` __yazın.__')
+                return await event.edit(f'✅**Modul uğurla yükləndi!**\n__Modulun komandaları və işlədilişi haqqında məlumat üçün__ `.merlin {cmdhelp}` __yazın.__')
             else:
                 await reply_message.forward_to(PLUGIN_CHANNEL_ID)
                 userbot.cmdhelp.CmdHelp(dosya).add_warning('Komutlar bulunamadı!').add()
@@ -175,12 +175,12 @@ async def pins(event):
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await reply_message.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'✅**Modul uğurla yükləndi!**\n__Modulun komandaları və işlədilişi haqqında məlumat üçün__ `.bozqurd {cmdhelp}` __yazın.__')
+                return await event.edit(f'✅**Modul uğurla yükləndi!**\n__Modulun komandaları və işlədilişi haqqında məlumat üçün__ `.merlin {cmdhelp}` __yazın.__')
             else:
                 dosyaAdi = reply_message.file.name.replace('.py', '')
                 extractCommands(dosya)
                 await reply_message.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'✅**Modul uğurla yükləndi!**\n__Modulun komandaları və işlədilişi haqqında məlumat üçün__ `.bozqurd {dosyaAdi}` __yazın.__')
+                return await event.edit(f'✅**Modul uğurla yükləndi!**\n__Modulun komandaları və işlədilişi haqqında məlumat üçün__ `.merlin {dosyaAdi}` __yazın.__')
 
 @register(outgoing=True, pattern="^.premove ?(.*)")
 async def premove(event):
@@ -216,7 +216,7 @@ async def psend(event):
         return
 
     if os.path.isfile(f"./userbot/modules/{modul}.py"):
-        await event.client.send_file(event.chat_id, f"./userbot/modules/{modul}.py", caption=LANG['BOZQURD_PLUGIN_CAPTION'])
+        await event.client.send_file(event.chat_id, f"./userbot/modules/{modul}.py", caption=LANG['MERLİN_PLUGIN_CAPTION'])
         await event.delete()
     else:
         await event.edit(LANG['NOT_FOUND_PLUGIN'])
