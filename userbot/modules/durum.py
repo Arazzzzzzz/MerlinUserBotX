@@ -5,7 +5,7 @@
 # Support - @BozQurdSup
 # Owner - @aykhan_s
 
-from userbot import CMD_HELP, ASYNC_POOL, tgbot, SPOTIFY_DC, G_DRIVE_CLIENT_ID, lastfm, LYDIA_API_KEY, YOUTUBE_API_KEY, OPEN_WEATHER_MAP_APPID, AVTO_PP, REM_BG_API_KEY, OCR_SPACE_API_KEY, PM_AUTO_BAN, BOTLOG_CHATID, BOZQURD_VERSION
+from userbot import CMD_HELP, ASYNC_POOL, tgbot, SPOTIFY_DC, G_DRIVE_CLIENT_ID, lastfm, LYDIA_API_KEY, YOUTUBE_API_KEY, OPEN_WEATHER_MAP_APPID, AVTO_PP, REM_BG_API_KEY, OCR_SPACE_API_KEY, PM_AUTO_BAN, BOTLOG_CHATID, MERLİN_VERSION
 from userbot.events import register
 from telethon import version
 from platform import python_version
@@ -33,7 +33,7 @@ async def durums(event):
     await event.edit(f"""
 **Python {LANG['VERSION']}:** `{python_version()}`
 **TeleThon {LANG['VERSION']}:** `{version.__version__}` 
-**BozQurd {LANG['VERSION']}:** `{BOZQURD_VERSION}`
+**Merlin {LANG['VERSION']}:** `{MERLİN_VERSION}`
 
 **{LANG['PLUGIN_COUNT']}:** `{len(CMD_HELP)}`
 
