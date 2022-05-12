@@ -30,12 +30,12 @@
             "ALREADY_DELETED": "⚠️`Plugin faylı artıq silinib.`",
             "NOT_FOUND_PLUGIN": "⚠️ **Plugin tapılmadı",
             "PLUG_DELETED": "🗑️`Plugin uğurla silindi!` **Tətbiq ediləcək əməliyyatlar üçün yenidən başlatmağınız lazımdır.**",
-            "BOZQURD_PLUGIN_CAPTION": "Bu [BozQurd](https://t.me/BozQurdResmi) pluginidir."
+            "MERLİN_PLUGIN_CAPTION": "Bu [Merlin](https://t.me/MerlinUserBot) pluginidir."
         },
         
-        "__bozqurd": {
+        "__merlin": {
             "NEED_PLUGIN": "❌ Modul tapılmadı",
-            "NEED_MODULE": "ℹ️ Zəhmət olmasa hansı BozQurd modulu üçün kömək istədiyinizi qeyd edin !!\nİstifadəsi: .bozqurd <modul adı>"
+            "NEED_MODULE": "ℹ️ Zəhmət olmasa hansı Merlin modulu üçün kömək istədiyinizi qeyd edin !!\nİstifadəsi: .bozqurd <modul adı>"
         },
 
         "__helpme": {
