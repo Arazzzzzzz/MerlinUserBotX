@@ -10,7 +10,7 @@ from asyncio.subprocess import PIPE as asyncPIPE
 from platform import uname
 from shutil import which
 from os import remove
-from userbot import CMD_HELP, BOZQURD_VERSION
+from userbot import CMD_HELP, MERLİN_VERSION
 from userbot.events import register
 from userbot.main import PLUGIN_MESAJLAR
 from telethon import version
@@ -77,7 +77,7 @@ async def bot_ver(event):
                          "`")
     else:
         await event.edit(
-            "[BozQurd](https://t.me/bozqurdresmi)"
+            "[Merlin](https://t.me/MerlinUserBot)"
         )
 
 
@@ -94,7 +94,7 @@ async def pipcheck(pip):
         )
 
         stdout, stderr = await pipc.communicate()
-        pipout = str(stdout.decode().strip()) \
+        pipou2t = str(stdout.decode().strip()) \
             + str(stderr.decode().strip())
 
         if pipout:
@@ -129,7 +129,7 @@ async def amialive(e):
         await e.edit(PLUGIN_MESAJLAR['alive'].format(
             telethon=version.__version__,
             python=python_version(),
-            bozqurd=BOZQURD_VERSION,
+            merlin=MERLİN_VERSION,
             plugin=len(CMD_HELP),
             id=me.id,
             username='@' + me.username if me.username else f'[{me.first_name}](tg://user?id={me.id})',
@@ -143,7 +143,7 @@ async def amialive(e):
             PLUGIN_MESAJLAR['alive'].text = PLUGIN_MESAJLAR['alive'].text.format(
                 telethon=version.__version__,
                 python=python_version(),
-                bozqurd=BOZQURD_VERSION,
+                merlin=MERLİN_VERSION,
                 plugin=len(CMD_HELP),
                 id=me.id,
                 username='@' + me.username if me.username else f'[{me.first_name}](tg://user?id={me.id})',
